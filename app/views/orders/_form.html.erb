@@ -35,6 +35,14 @@
     <%= f.label :customer_lastname %><br>
     <%= f.text_field :customer_lastname %>
   </div>
+
+  <%= f.fields_for :line_items do |builder| %>
+      <%= render "line_item_fields", f: builder %>
+    <% end %>
+
+
+  
+
   <div class="actions">
     <%= f.submit %>
   </div>
