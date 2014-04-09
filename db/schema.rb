@@ -11,10 +11,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140320170002) do
+ActiveRecord::Schema.define(version: 20140327112309) do
 
   create_table "line_items", force: true do |t|
-    t.string   "product"
     t.integer  "quantity"
     t.decimal  "price",      precision: 10, scale: 0
     t.datetime "created_at"
